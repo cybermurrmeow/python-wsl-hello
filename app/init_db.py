@@ -1,5 +1,5 @@
-from db.db import Base, engine, SessionLocal
-from db.crud import create_category, create_book
+from app.db.db import Base, engine, SessionLocal
+from app.db.crud import create_category, create_book
 
 Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
